@@ -1,0 +1,92 @@
+body {
+  font-family: "Helvetica Neue",Helvetica,sans-serif;
+  font-size: 13px;
+
+  width: 400px;
+  background: linear-gradient(to top, #333333 0%,#333333 50%,#333333 50%,white 50%,white 100%);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th {
+  text-align: left;
+  font-weight: normal;
+}
+input {
+  outline: none;
+}
+input[type=range] {
+  width: 100%;
+  box-sizing: border-box;
+  margin-right: 10px;
+}
+span {
+  min-width: 35px;
+}
+select {
+  outline: none;
+}
+
+[hbox] {
+  display: flex;
+}
+[align=center] {
+  align-items: center;
+}
+[pack=center] {
+  justify-content: center;
+}
+[flex="1"] {
+  flex: 1;
+}
+
+.night {
+  color: #ccc;
+}
+.sun {
+  background: url('sun.svg') left 0px center no-repeat;
+  width: 48px;
+  background-size: 42px;
+}
+.moon {
+  background: url('moon.svg') left 3px center no-repeat;
+  width: 48px;
+  background-size: 38px;
+}
+.right {
+  text-align: right;
+}
+.sub td:first-child {
+  text-align: left;
+  white-space: nowrap;
+}
+.sub td:last-child {
+  text-align: right;
+}
+
+.level:before,
+.red:before,
+.green:before,
+.blue:before {
+  content: ' ';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 5px;
+  border-radius: 50%;
+  border: solid 2px #ccc;
+}
+.level:before {
+  background-color: #fff;
+}
+.red:before {
+  background-color: red;
+}
+.green:before {
+  background-color: green;
+}
+.blue:before {
+  background-color: blue;
+}

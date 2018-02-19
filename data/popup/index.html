@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="index.css">
+  </head>
+
+  <body>
+    <table>
+      <tbody>
+        <tr>
+          <td rowspan="2" class="sun"></td>
+          <td>
+            <div hbox>
+              <select id=method title="'DIV' method uses an overlay DIV element to control the page lux (like an eyeglass). 'SVG' method uses a custom SVG filter to create different channels for red, green and blue colors (like a real color filter). IF the 'SVG' method is supported by your browser, it is the recommended method. Note that you will need to refresh the page for the new method to be applied.">
+                <option value="div-method">DIV</option>
+                <option value="filter-method">SVG</option>
+              </select>
+              <span flex=1></span>
+              <div>Starts from <input type="time" id="day-time"></div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table class="sub">
+              <colgroup>
+                <col width="48">
+                <col>
+                <col width="42">
+              </colgroup>
+              <tr>
+                <td class="red">Red</td>
+                <td><input type="range" min=0 max=1 id="day-r-range" value="1" step="0.01"></td>
+                <td><span>100%</span></td>
+              </tr>
+              <tr>
+                <td class="blue">Blue</td>
+                <td><input type="range" min=0 max=1 id="day-b-range" value="1" step="0.01"></td>
+                <td><span>100%</span></td>
+              </tr>
+              <tr>
+                <td class="green">Green</td>
+                <td><input type="range" min=0 max=1 id="day-g-range" value="1" step="0.01"></td>
+                <td><span>100%</span></td>
+              </tr>
+              <tr>
+                <td class="level">Level</td>
+                <td><input type="range" min=0 max=1 id="day-level" value="1" step="0.01"></td>
+                <td><span>100%</span></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">.</td>
+        </tr>
+      </tbody>
+      <tbody class="night">
+        <tr>
+          <td rowspan="2" class="moon"></td>
+          <td class="right">Starts from <input type="time" id="night-time"></td>
+        </tr>
+        <tr>
+          <td>
+            <table class="sub">
+              <colgroup>
+                <col width="48">
+                <col>
+                <col width="42">
+              </colgroup>
+              <tr>
+                <td class="red">Red</td>
+                <td><input type="range" min=0 max=1 id="night-r-range" value="1" step="0.01"></td>
+                <td><span>100%</span></td>
+              </tr>
+              <tr>
+                <td class="blue">Blue</td>
+                <td><input type="range" min=0 max=1 id="night-b-range" value="0.8" step="0.01"></td>
+                <td><span>80%</span></td>
+              </tr>
+              <tr>
+                <td class="green">Green</td>
+                <td><input type="range" min=0 max=1 id="night-g-range" value="1" step="0.01"></td>
+                <td><span>100%</span></td>
+              </tr>
+              <tr>
+                <td class="level">Level</td>
+                <td><input type="range" min=0 max=1 id="night-level" value="0.9" step="0.01"></td>
+                <td><span>90%</span></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script src="index.js"></script>
+  </body>
+</html>
